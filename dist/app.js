@@ -1,76 +1,194 @@
-import {beijingDate,publishedEntries} from './logic.mjs';
-let entries = [];
+import { beijingDate, publishedEntries } from './logic.mjs';
+
 const app = document.querySelector('#app');
-const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escape = value => String(value).replace(/[&<>"']/g, character => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+})[character]);
+const saveIcon = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>';
+const copyIcon = '<svg aria-hidden="true" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="1"/><path d="M15 8V3H3v13h5"/></svg>';
+let entries = [];
 let toastTimer;
+let displayedDate = beijingDate();
+let momentCleanup;
+
 function toast(message) {
-  const el = document.querySelector('#toast'); el.textContent = message; el.classList.add('visible');
-  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('visible'), 3500);
+  const node = document.querySelector('#toast');
+  node.textContent = message;
+  node.classList.add('visible');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => node.classList.remove('visible'), 4000);
 }
-function dateLabel(date) {
-  return new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',weekday:'long'}).format(new Date(date+'T12:00:00+08:00'));
+
+function weekday(date) {
+  return new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', weekday: 'long' })
+    .format(new Date(date + 'T00:00:00Z'));
 }
-function bindImages() {
-  app.querySelectorAll('img').forEach(img => img.addEventListener('error', () => {img.style.visibility='hidden';}, {once:true}));
+
+function photo(entry, lazy = false) {
+  return '<img src="' + escape(entry.image) + '" alt="' + escape(entry.imageAlt) +
+    '" width="1200" height="800" data-source="library-057" data-subject="landscape" style="object-position:' +
+    escape(entry.imageFocus || '50% 50%') + '" decoding="async" ' +
+    (lazy ? 'loading="lazy"' : 'fetchpriority="high"') + '>';
 }
+
+function renderArchive(published) {
+  document.title = 'Past notes · Daily Glimmer';
+  app.innerHTML = '<section class="wrap archive"><div class="page-title"><h1>Past notes</h1><p>' +
+    published.length + ' days of words and landscapes</p></div><div class="archive-grid">' +
+    published.map(entry => '<a class="entry" href="#/day/' + entry.id +
+      '"><div class="entry-photo">' + photo(entry, true) + '</div><div class="entry-meta"><time>' +
+      entry.publishDate + '</time><span>' + escape(entry.theme) + '</span></div><p>' +
+      escape(entry.quote) + '</p></a>').join('') + '</div></section>';
+}
+
+function renderCredits() {
+  const unique = [...new Map(entries.map(entry => [entry.image, entry])).values()];
+  document.title = 'Photo credits & licenses · Daily Glimmer';
+  app.innerHTML = '<section class="wrap credits"><h1>Photo credits & licenses</h1>' +
+    '<p>Photographs sourced from Wikimedia Commons and bundled with Taste Skill. Images are cropped for display; each image and its crop follow the original license. Credits and source links are listed below.</p>' +
+    unique.map(entry => '<article><h2>' + escape(entry.imageAlt) + '</h2><p>Photo by ' +
+      escape(entry.imageAuthor) + ' · ' + escape(entry.imageLicense) +
+      '</p><div class="license-links"><a href="' + escape(entry.imageSourceUrl) +
+      '" target="_blank" rel="noopener">Original photo</a><a href="' + escape(entry.imageLicenseUrl) +
+      '" target="_blank" rel="noopener">License terms</a><a href="' + escape(entry.image) +
+      '" target="_blank">Local image</a></div></article>').join('') +
+    '<p>Quotes are original, AI-assisted writing. Sample content is subject to editorial review.</p></section>';
+}
+
+function renderDaily(entry, published, detail) {
+  const [year, month, day] = entry.publishDate.split('-');
+  const index = published.findIndex(item => item.id === entry.id);
+  const older = published[index + 1];
+  const newer = published[index - 1];
+  document.title = entry.publishDate + ' · Daily Glimmer';
+  app.innerHTML = '<section class="wrap daily hero" data-enter><div class="edition"><h1>' +
+    (detail ? 'A note from the past' : 'A little light for today') + '</h1><time datetime="' + entry.publishDate + '">' +
+    entry.publishDate.replaceAll('-', '.') + '</time></div><div class="daily-grid">' +
+    '<div class="reading"><div class="date-block"><span class="date-day">' + day +
+    '</span><div class="date-month">' + year + '' + new Intl.DateTimeFormat('en-US',{month:'long',timeZone:'UTC'}).format(new Date(entry.publishDate+'T00:00:00Z')) + ' ' + year + '<br>' +
+    weekday(entry.publishDate) + '</div></div><p class="theme">' + escape(entry.theme) +
+    '</p><blockquote class="quote">' + escape(entry.quote) +
+    '</blockquote><p class="text-source">' + escape(entry.textSource) +
+    '</p><div class="btn-row"><button class="btn btn--primary" id="save">' + saveIcon +
+    'Save this note</button><button class="btn btn--secondary" id="copy">' + copyIcon +
+    'Copy quote</button></div></div><figure class="photo-frame" data-moment="picture-develops" data-moment-opts=\'{"look":"film"}\'>' +
+    photo(entry) + '</figure></div><div class="action-row"><h2>A small thing to try</h2><p>' +
+    escape(entry.action) + '</p></div><nav class="day-nav" aria-label="More daily notes">' +
+    (older ? '<a href="#/day/' + older.id + '">← Earlier · ' + older.publishDate.slice(5).replace('-', ' / ') + '</a>' : '<span>You’re at the first note</span>') +
+    '<a href="#/archive">Browse past notes</a>' +
+    (newer ? '<a href="#/day/' + newer.id + '">Later · ' + newer.publishDate.slice(5).replace('-', ' / ') + '</a>' : '<span>A little light, every day</span>') +
+    '</nav></section>';
+  document.querySelector('#copy').onclick = async () => {
+    try {
+      await navigator.clipboard.writeText(entry.quote + '\n— Daily Glimmer');
+      toast('Copied to clipboard');
+    } catch {
+      toast('Couldn’t copy. Please select and copy the quote manually.');
+    }
+  };
+  document.querySelector('#save').onclick = () => savePoster(entry);
+  const frame = app.querySelector('[data-moment]');
+  import('./assets/moments/moments.js').then(async module => {
+    if (!frame.isConnected) return;
+    await module.mountAll(frame.parentElement);
+    momentCleanup = () => module.unmountAll(frame.parentElement || frame);
+  }).catch(() => { frame.classList.add('mo-safe'); });
+}
+
 function render() {
+  if (momentCleanup) { momentCleanup(); momentCleanup = null; }
   const published = publishedEntries(entries, beijingDate());
-  const path = location.hash.slice(1).split('/').filter(Boolean).join('/');
-  document.querySelector('#todayNav').classList.toggle('active', !path);
-  document.querySelector('#archiveNav').classList.toggle('active', path === 'archive');
-  if (path === 'archive') {
-    document.title='往期日签 · 今日微光';
-    app.innerHTML='<section class="archive-intro"><p class="eyebrow">A LITTLE LIGHT, EVERY DAY</p><h1>留住每一天的微光</h1><p>走过的日子，也藏着继续向前的力量。</p></section><div class="grid">'+published.map(e=>'<a class="mini" href="#/day/'+e.id+'"><img src="'+escape(e.image)+'" alt="'+escape(e.imageAlt)+'" loading="lazy"><div><time>'+e.publishDate+' · '+escape(e.theme)+'</time><p>'+escape(e.quote)+'</p></div></a>').join('')+'</div>';
-    if (!published.length) app.innerHTML += '<p class="empty">第一束微光正在准备中。</p>';
-  } else {
-    const isDetail = path.startsWith('day/');
-    const entry = isDetail ? published.find(e=>e.id===path.slice(4)) : (!path ? published[0] : null);
-    if (!entry) {app.innerHTML='<p class="empty">这一天的微光尚未发布。<br><a href="#/">回到今日</a></p>'; return;}
-    document.title=entry.publishDate+' · 今日微光';
-    const parts=entry.publishDate.split('-');
-    app.innerHTML=(isDetail?'<a class="back" href="#/archive">返回往期日签</a>':'')+'<section class="intro"><div><p class="eyebrow">A LITTLE LIGHT, EVERY DAY</p><h1>'+(isDetail?'那一天的微光':'给今天，一点微光')+'</h1></div><div class="date"><strong>'+parts[1]+' / '+parts[2]+'</strong>'+parts[0]+' · '+dateLabel(entry.publishDate)+'</div></section><article class="card"><div class="landscape"><img src="'+escape(entry.image)+'" alt="'+escape(entry.imageAlt)+'"><span class="image-label">慢慢来，光会照进来</span></div><div class="quote-block"><span class="theme">'+escape(entry.theme)+'</span><blockquote>'+escape(entry.quote)+'</blockquote><p class="source">'+escape(entry.textSource)+'</p></div></article><section class="action"><span>今日小行动</span><p>'+escape(entry.action)+'</p></section><div class="controls"><button class="primary" id="save">↓ &nbsp;保存日签</button><button id="copy">复制文字</button></div><p class="credit">'+(entry.imageSourceUrl?'摄影：'+escape(entry.imageAuthor)+' · <a target="_blank" rel="noopener noreferrer" href="'+escape(entry.imageSourceUrl)+'">查看来源</a>':'背景：今日微光原创渐变风景 · 摄影素材待补充')+'</p>';
-    document.querySelector('#copy').onclick=async()=>{try{await navigator.clipboard.writeText(entry.quote+'\n—— 今日微光');toast('文字已复制，愿微光与你同在。');}catch{toast('复制失败，请长按或选中文字复制。');}};
-    document.querySelector('#save').onclick=()=>savePoster(entry);
+  const route = location.hash.slice(1).split('/').filter(Boolean).join('/');
+  for (const [id, selected] of [['todayNav', !route || route === 'content'], ['archiveNav', route === 'archive']]) {
+    const link = document.getElementById(id);
+    link.classList.toggle('active', selected);
+    if (selected) link.setAttribute('aria-current', 'page');
+    else link.removeAttribute('aria-current');
   }
-  bindImages();
+  if (route === 'archive') renderArchive(published);
+  else if (route === 'credits') renderCredits();
+  else {
+    const detail = route.startsWith('day/');
+    const entry = detail ? published.find(item => item.id === route.slice(4)) :
+      ((!route || route === 'content') ? published[0] : null);
+    if (entry) renderDaily(entry, published, detail);
+    else app.innerHTML = '<div class="wrap empty"><h1>This note isn’t available yet.</h1><a href="#/">Back to today</a></div>';
+  }
+  app.querySelectorAll('img').forEach(img => {
+    const fail = () => { img.style.visibility = 'hidden'; img.parentElement.setAttribute('aria-label', 'Landscape image unavailable'); };
+    img.addEventListener('error', fail, { once: true });
+    if (img.complete && !img.naturalWidth) fail();
+  });
 }
-function wrapText(ctx, text, maxWidth) {
-  const lines=[]; let line='';
+
+function linesFor(ctx, text, width) {
+  const lines = [];
+  let line = '';
   for (const character of text) {
-    if (line && ctx.measureText(line+character).width>maxWidth) {lines.push(line);line=character;} else line+=character;
+    if (line && ctx.measureText(line + character).width > width) { lines.push(line); line = character; }
+    else line += character;
   }
-  if(line)lines.push(line);return lines;
+  if (line) lines.push(line);
+  return lines;
 }
+
 async function savePoster(entry) {
-  const button=document.querySelector('#save');button.disabled=true;button.textContent='正在生成…';
+  const button = document.querySelector('#save');
+  button.disabled = true;
+  button.textContent = 'Creating…';
   try {
     await document.fonts.ready;
-    const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1440;
-    const ctx=canvas.getContext('2d');
-    ctx.fillStyle='#faf9f2';ctx.fillRect(0,0,1080,1440);
-    const gradient=ctx.createLinearGradient(0,0,1080,780);gradient.addColorStop(0,'#b4c8c3');gradient.addColorStop(1,'#e9d8bb');ctx.fillStyle=gradient;ctx.fillRect(0,0,1080,780);
+    const canvas = document.createElement('canvas');
+    canvas.width = 1080;
+    const ctx = canvas.getContext('2d');
+    ctx.font = '44px "Newsreader", "SimSun", serif';
+    const quoteLines = linesFor(ctx, entry.quote, 920);
+    ctx.font = '20px sans-serif';
+    const creditLines = linesFor(ctx, 'Photo: ' + entry.imageAuthor + ' / ' + entry.imageLicense + ' / cropped', 920);
+    const sourceLines = linesFor(ctx, entry.imageSourceUrl, 920);
+    const licenseLines = linesFor(ctx, entry.imageLicenseUrl, 920);
+    canvas.height = 1050 + quoteLines.length * 76 + (creditLines.length + sourceLines.length + licenseLines.length) * 27;
+    ctx.fillStyle = '#efe9e0'; ctx.fillRect(0, 0, 1080, canvas.height);
+    ctx.fillStyle = '#22261f'; ctx.font = '30px "Newsreader", serif'; ctx.fillText('Daily Glimmer', 64, 70);
+    ctx.font = '22px sans-serif'; ctx.textAlign = 'right'; ctx.fillText(entry.publishDate + ' · ' + weekday(entry.publishDate), 1016, 70); ctx.textAlign = 'left';
+    const gradient = ctx.createLinearGradient(64, 110, 1016, 750);
+    gradient.addColorStop(0, '#b8c3b3'); gradient.addColorStop(1, '#ded3bf');
+    ctx.fillStyle = gradient; ctx.fillRect(64, 110, 952, 640);
     try {
-      const img=new Image();img.src=entry.image;await img.decode();
-      const scale=Math.max(1080/img.naturalWidth,780/img.naturalHeight);
-      const w=img.naturalWidth*scale,h=img.naturalHeight*scale;
-      ctx.save();ctx.beginPath();ctx.rect(0,0,1080,780);ctx.clip();ctx.drawImage(img,(1080-w)/2,(780-h)/2,w,h);ctx.restore();
-    } catch {}
-    ctx.fillStyle='#536849';ctx.font='28px sans-serif';ctx.fillText(entry.publishDate+'  '+dateLabel(entry.publishDate),80,850);
-    ctx.fillStyle='#2d4034';ctx.font='44px "Noto Serif SC", "SimSun", serif';
-    wrapText(ctx,entry.quote,920).forEach((line,i)=>ctx.fillText(line,80,950+i*77));
-    ctx.fillStyle='#69765f';ctx.font='25px sans-serif';
-    wrapText(ctx,'今日小行动 · '+entry.action,920).forEach((line,i)=>ctx.fillText(line,80,1230+i*40));
-    ctx.fillStyle='#3b503b';ctx.font='32px "Noto Serif SC",serif';ctx.fillText('今日微光',80,1370);
-    ctx.font='18px sans-serif';ctx.fillStyle='#7d8577';ctx.fillText('本站创作 · AI 辅助 / 原创渐变风景',580,1370);
-    const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('PNG failed');
-    const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='今日微光-'+entry.publishDate+'.png';link.click();setTimeout(()=>URL.revokeObjectURL(url),30000);toast('日签已生成，感谢你收藏今天的微光。');
-  } catch {toast('保存失败，请稍后再试。');}
-  finally {button.disabled=false;button.textContent='↓  保存日签';}
+      const img = new Image(); img.src = entry.image; await img.decode();
+      const scale = Math.max(952 / img.naturalWidth, 640 / img.naturalHeight);
+      const width = img.naturalWidth * scale, height = img.naturalHeight * scale;
+      ctx.save(); ctx.beginPath(); ctx.rect(64, 110, 952, 640); ctx.clip();
+      ctx.drawImage(img, 64 + (952 - width) / 2, 110 + (640 - height) / 2, width, height); ctx.restore();
+    } catch { /* The same gradient fallback is available in the downloaded poster. */ }
+    ctx.fillStyle = '#2e5b44'; ctx.font = '24px sans-serif'; ctx.fillText(entry.theme, 80, 810);
+    ctx.fillStyle = '#22261f'; ctx.font = '44px "Newsreader", "SimSun", serif';
+    quoteLines.forEach((line, index) => ctx.fillText(line, 80, 885 + index * 76));
+    let y = 925 + quoteLines.length * 76;
+    ctx.fillStyle = '#5a5c53'; ctx.font = '23px sans-serif'; ctx.fillText('Original writing · AI-assisted', 80, y);
+    y += 45; ctx.font = '20px sans-serif';
+    for (const line of [...creditLines, ...sourceLines, ...licenseLines]) { ctx.fillText(line, 80, y); y += 27; }
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+    if (!blob) throw new Error('PNG export failed');
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url; link.download = 'daily-glimmer-' + entry.publishDate + '.png';
+    document.body.append(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+    toast('Your note is ready to download');
+  } catch { toast('Couldn’t save the image. Please try again.'); }
+  finally { button.disabled = false; button.innerHTML = saveIcon + 'Save this note'; }
 }
-try {
-  const response=await fetch('./content.json');if(!response.ok)throw new Error('content failed');
-  entries=await response.json();render();
-} catch {app.innerHTML='<p class="empty">内容暂时无法加载，请刷新页面重试。</p>';}
-addEventListener('hashchange',()=>{render();scrollTo(0,0);});
-setInterval(render,60000);
 
+try {
+  const response = await fetch('./content.json');
+  if (!response.ok) throw new Error('Content unavailable');
+  entries = await response.json();
+  render();
+  import('./assets/motion/motion.js').catch(() => {});
+} catch { app.innerHTML = '<p class="empty">Couldn’t load today’s note. Please refresh and try again.</p>'; }
+addEventListener('hashchange', () => { render(); if (location.hash !== '#content') scrollTo(0, 0); });
+setInterval(() => {
+  const date = beijingDate();
+  if (date !== displayedDate) { displayedDate = date; render(); }
+}, 10000);

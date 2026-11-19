@@ -1,11 +1,23 @@
-# 今日微光
+# Daily Glimmer
 
-无构建依赖的静态网站。运行 python -m http.server 5173 --directory dist，然后访问 http://localhost:5173。
+Redesigned with taste-skill 2.5.1. Built with plain HTML, CSS, and JavaScript; no build step required.
 
-内容位于 dist/content.json，使用北京时间筛选发布日期。每条详情的地址为 #/day/day-001 形式。修改日期即可排期，不需要模型 API。
+## Getting started
 
-当前包含 14 条 AI 辅助短句和 7 张自行绘制的 SVG 渐变山影背景。Unsplash 下载被站点验证拦截，摄影素材尚待补充，因此摄影作者和授权链接留空。原创背景可随项目使用。
+From this directory, run:
 
-替换摄影时，将图片放在 dist/images，填写 image、imageAlt、imageAuthor、imageSourceUrl、imageLicenseUrl、imageDownloadedAt，并保留原始授权记录。同步调整海报底部的来源文字。
+    python -m http.server 5173 --directory dist
 
-示例排期从 2026-11-11 到 2026-11-24。日期超过示例范围后会显示最近已发布内容和实际日期。
+Open http://localhost:5173.
+
+## Content
+
+The English edition contains 14 daily notes in dist/content.json. Entries are scheduled using China Standard Time; on unscheduled days the home page falls back to the latest published note. Each note has a shareable route such as #/day/day-001.
+
+Seven landscape photographs are bundled with taste-skill from Wikimedia Commons. Their source pages, photographers, licenses, and download dates are recorded in the data file; the site provides full credits. Images are cropped for display, with applicable licenses preserved. Downloaded PNG posters include source and license links. Reused skill assets retain their MIT license.
+
+## Checks
+
+Browser checks verified the home page, scheduled content, copy success and failure feedback (clipboard stub), nine published archive notes, individual note routes, future-date filtering, seven photo credits, image fallback, and PNG export.
+
+Browser screenshots are in shots/; design notes are in DESIGN.md. The general company-landing-page checker has rules that do not fit this daily reading product, so its result is documented accurately.
