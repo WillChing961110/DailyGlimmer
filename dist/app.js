@@ -61,12 +61,11 @@ function renderDaily(entry, published, detail) {
   const older = published[index + 1];
   const newer = published[index - 1];
   document.title = entry.publishDate + ' · Daily Glimmer';
-  app.innerHTML = '<section class="wrap daily hero" data-enter><div class="edition"><h1>' +
-    (detail ? 'A note from the past' : 'A little light for today') + '</h1><time datetime="' + entry.publishDate + '">' +
-    entry.publishDate.replaceAll('-', '.') + '</time></div><div class="daily-grid">' +
+  app.innerHTML = '<section class="wrap daily hero" data-enter><div class="edition"><div class="edition-kicker">A LITTLE LIGHT FOR TODAY</div><time datetime="' + entry.publishDate + '">' +
+    new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(entry.publishDate+'T00:00:00Z')) + '</time></div><div class="daily-grid">' +
     '<div class="reading"><div class="date-block"><span class="date-day">' + day +
-    '</span><div class="date-month">' + year + '' + new Intl.DateTimeFormat('en-US',{month:'long',timeZone:'UTC'}).format(new Date(entry.publishDate+'T00:00:00Z')) + ' ' + year + '<br>' +
-    weekday(entry.publishDate) + '</div></div><p class="theme">' + escape(entry.theme) +
+    '</span><div class="date-month">' + weekday(entry.publishDate) + '<br>' +
+    new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',timeZone:'UTC'}).format(new Date(entry.publishDate+'T00:00:00Z')) + '</div></div><p class="theme">' + escape(entry.theme) +
     '</p><blockquote class="quote">' + escape(entry.quote) +
     '</blockquote><p class="text-source">' + escape(entry.textSource) +
     '</p><div class="btn-row"><button class="btn btn--primary" id="save">' + saveIcon +
@@ -116,7 +115,7 @@ function render() {
   }
   app.querySelectorAll('img').forEach(img => {
     const fail = () => { img.style.visibility = 'hidden'; img.parentElement.setAttribute('aria-label', 'Landscape image unavailable'); };
-    img.addEventListener('error', fail, { once: true });
+      img.addEventListener('error', fail, { once: true });
     if (img.complete && !img.naturalWidth) fail();
   });
 }
