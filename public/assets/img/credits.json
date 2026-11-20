@@ -1,0 +1,104 @@
+{
+ "note": "Credits for the photographs in this folder: photos.mjs credits prints the footer block for the ones the pages use.",
+ "photos": [
+  {
+   "file": "photo-m108358720-1200.webp",
+   "files": [
+    "photo-m108358720-1200.webp"
+   ],
+   "id": "m108358720",
+   "alt": "Gravel road cut into a moss-covered basalt slope in the Westfjords, Iceland, with yellow edge poles and cloud above",
+   "where": "Westfjords, Iceland",
+   "by": "Barry Marsh",
+   "licence": "Public Domain Mark 1.0",
+   "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-m111881197-2400.webp",
+   "files": [
+    "photo-m111881197-1200.webp",
+    "photo-m111881197-2400.webp"
+   ],
+   "id": "m111881197",
+   "alt": "View down a valley to a grey fjord in the Westfjords, Iceland, with rust and moss slopes either side and cloud lifting off the far plateau",
+   "where": "Westfjords, Iceland",
+   "by": "Barry Marsh",
+   "licence": "Public Domain Mark 1.0",
+   "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Stunning_Westfjords,_Iceland_(48816583203).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-m113462760-1200.webp",
+   "files": [
+    "photo-m113462760-1200.webp"
+   ],
+   "id": "m113462760",
+   "alt": "Wet road curving along the shore at Viðareiði in the Faroe Islands, sunbeams falling on a layered cliff wall, sheep grazing on the verge",
+   "where": "Viðareiði, Faroe Islands",
+   "by": "Sanshiro KUBOTA from London, UK",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-m21913761-1200.webp",
+   "files": [
+    "photo-m21913761-1200.webp"
+   ],
+   "id": "m21913761",
+   "alt": "Funningsfjørður in the Faroe Islands in October, snow on the stepped cliffs and a rain squall over dark water",
+   "where": "Funningsfjørður, Eysturoy, Faroe Islands",
+   "by": "Vincent van Zeijst",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-m44931831-1200.webp",
+   "files": [
+    "photo-m44931831-1200.webp"
+   ],
+   "id": "m44931831",
+   "alt": "Still water of Sløverfjorden on Austvågøya in Lofoten mirroring the mountains, with moss, rowan and red fireweed in the foreground",
+   "where": "Sløverfjorden, Lofoten, Norway",
+   "by": "Ximonic (Simo Räsänen)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-m164989354-1200.webp",
+   "files": [
+    "photo-m164989354-1200.webp"
+   ],
+   "id": "m164989354",
+   "alt": "Grey sea in long exposure over black rocks on the east coast of Iceland, a road along the headland and a snow-covered range beyond",
+   "where": "Iceland",
+   "by": "Eric Kilby",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:East_Coastal_Cliffs_-_Iceland.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-m175976897-1200.webp",
+   "files": [
+    "photo-m175976897-1200.webp"
+   ],
+   "id": "m175976897",
+   "alt": "Wind-ruffled grey sea breaking along a dark scree slope in the Eastfjords of Iceland under low cloud",
+   "where": "Eastfjords, Iceland",
+   "by": "Eric Kilby",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Coastline_Looking_North_-_Iceland.jpg",
+   "source": "Wikimedia Commons"
+  }
+ ]
+}
