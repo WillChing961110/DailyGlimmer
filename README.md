@@ -21,3 +21,7 @@ The quote page, archive, metadata, and sitemap are statically rendered. Browser-
 ## Validation
 
 Run `npm run check` and `npm run build`. Confirm generated quote route count and sitemap entries against the current UTC date. Test direct refresh on each locale route, old-link mapping, image fallback, quote copy, PNG export, and mobile layout.
+
+## Design credit
+
+The UI refinement on the `design/unslop-refresh` branch was guided by Unslop by Damir Sokolovsky, licensed under CC BY 4.0: https://github.com/heydamir/unslop.

@@ -10,7 +10,7 @@ export function DailyCard({entry,locale,previous,next}:{entry:Entry;locale:Local
   const dateLabel=new Intl.DateTimeFormat(dateLocale,{month:'short',day:'numeric',timeZone:'UTC'}).format(date);
   const c=copy[locale];
   return <section className="daily hero" data-enter>
-    <div className="edition"><div className="edition-kicker">{locale==='en'?'A LITTLE LIGHT FOR TODAY':locale==='zh'?'今日的一束微光':'今日的一束微光'}</div><time dateTime={entry.publishDate}>{new Intl.DateTimeFormat(dateLocale,{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(date)}</time></div>
+    <div className="edition"><div className="edition-kicker">{locale==='en'?'A little light for today':'今日的一束微光'}</div><time dateTime={entry.publishDate}>{new Intl.DateTimeFormat(dateLocale,{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).format(date)}</time></div>
     <div className="daily-grid">
       <div className="reading">
         <div className="date-block"><span className="date-day">{day}</span><div className="date-month">{weekday}<br/>{dateLabel}</div></div>
