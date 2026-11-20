@@ -14,7 +14,23 @@
     "imageType": "photograph",
     "imageLicense": "Public Domain Mark 1.0",
     "imageFocus": "45% 70%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "允许自己慢一点。今天迈出的一小步，也算进步。",
+        "theme": "自我接纳",
+        "action": "花五分钟，开始一件你一直想做的事。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "允許自己慢一點。今天邁出的一小步，也算進步。",
+        "theme": "自我接納",
+        "action": "花五分鐘，開始一件你一直想做的事。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    }
   },
   {
     "id": "day-002",
@@ -31,7 +47,23 @@
     "imageType": "photograph",
     "imageLicense": "Public Domain Mark 1.0",
     "imageFocus": "50% 58%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "当终点还看不清时，先走好眼前这一段路。",
+        "theme": "坚持",
+        "action": "为正在努力的目标，再投入十分钟。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "當終點還看不清時，先走好眼前這一段路。",
+        "theme": "堅持",
+        "action": "為正在努力的目標，再投入十分鐘。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    }
   },
   {
     "id": "day-003",
@@ -48,7 +80,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY 2.0",
     "imageFocus": "50% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "把注意力从遥远的终点收回来。今天能做的一件小事，同样重要。",
+        "theme": "行动",
+        "action": "写下今天想完成的一件小事。",
+        "imageAlt": "阳光穿过云层，洒向海岸公路"
+      },
+      "zh-TW": {
+        "quote": "把注意力從遙遠的終點收回來。今天能做的一件小事，同樣重要。",
+        "theme": "行動",
+        "action": "寫下今天想完成的一件小事。",
+        "imageAlt": "陽光穿過雲層，灑向海岸公路"
+      }
+    }
   },
   {
     "id": "day-004",
@@ -65,7 +113,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 3.0",
     "imageFocus": "50% 55%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "累了就停一停，让呼吸慢下来。照顾自己也该列入今天的安排。",
+        "theme": "休息",
+        "action": "放下手机，慢慢喝完一杯水。",
+        "imageAlt": "雪峰环绕的法罗群岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "累了就停一停，讓呼吸慢下來。照顧自己也該列入今天的安排。",
+        "theme": "休息",
+        "action": "放下手機，慢慢喝完一杯水。",
+        "imageAlt": "雪峰環繞的法羅群島峽灣"
+      }
+    }
   },
   {
     "id": "day-005",
@@ -82,7 +146,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 3.0",
     "imageFocus": "50% 55%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "面对陌生的事感到紧张很正常。你可以带着这份感觉开始。",
+        "theme": "勇气",
+        "action": "向一个让你好奇的问题迈出第一步。",
+        "imageAlt": "倒映在平静峡湾中的挪威群山"
+      },
+      "zh-TW": {
+        "quote": "面對陌生的事感到緊張很正常。你可以帶著這份感覺開始。",
+        "theme": "勇氣",
+        "action": "向一個讓你好奇的問題邁出第一步。",
+        "imageAlt": "倒映在平静峽灣中的挪威群山"
+      }
+    }
   },
   {
     "id": "day-006",
@@ -99,7 +179,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 2.0",
     "imageFocus": "40% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "善待昨天的自己。那时的你，已经在用拥有的一切努力生活。",
+        "theme": "自我接纳",
+        "action": "写下一件你愿意感谢自己的小事。",
+        "imageAlt": "远处群山映衬下的冰岛岩石海岸"
+      },
+      "zh-TW": {
+        "quote": "善待昨天的自己。那時的你，已經在用擁有的一切努力生活。",
+        "theme": "自我接納",
+        "action": "寫下一件你願意感謝自己的小事。",
+        "imageAlt": "遠處群山映襯下的冰島岩石海岸"
+      }
+    }
   },
   {
     "id": "day-007",
@@ -116,7 +212,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 2.0",
     "imageFocus": "45% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "如果今天没有方向，不妨先整理桌面的一角，让思绪有地方停靠。",
+        "theme": "整理",
+        "action": "花三分钟整理手边的一小块空间。",
+        "imageAlt": "冰岛东岸翻涌的海浪"
+      },
+      "zh-TW": {
+        "quote": "如果今天沒有方向，不妨先整理桌面的一角，讓思緒有地方停靠。",
+        "theme": "整理",
+        "action": "花三分鐘整理手邊的一小塊空間。",
+        "imageAlt": "冰島東岸翻涌的海浪"
+      }
+    }
   },
   {
     "id": "day-008",
@@ -133,7 +245,23 @@
     "imageType": "photograph",
     "imageLicense": "Public Domain Mark 1.0",
     "imageFocus": "45% 70%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "不必今天就解决所有问题。先照顾最小的那一件，也是在向前。",
+        "theme": "行动",
+        "action": "把一个大任务拆成三个小步骤。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "不必今天就解決所有問題。先照顧最小的那一件，也是在向前。",
+        "theme": "行動",
+        "action": "把一個大任務拆成三個小步骤。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    }
   },
   {
     "id": "day-009",
@@ -150,7 +278,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY 2.0",
     "imageFocus": "50% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "不用着急。今天的一小步值得被看见，也值得被肯定。",
+        "theme": "自我接纳",
+        "action": "花五分钟，开始一件你一直想做的事。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "不用著急。今天的一小步值得被看見，也值得被肯定。",
+        "theme": "自我接納",
+        "action": "花五分鐘，開始一件你一直想做的事。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    }
   },
   {
     "id": "day-010",
@@ -167,7 +311,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY 2.0",
     "imageFocus": "50% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "有些路会在行走中教你认识自己。先试着走一步，再调整方向。",
+        "theme": "探索",
+        "action": "给一个新想法十分钟。",
+        "imageAlt": "阳光穿过云层，洒向海岸公路"
+      },
+      "zh-TW": {
+        "quote": "有些路會在行走中教你認識自己。先試著走一步，再調整方向。",
+        "theme": "探索",
+        "action": "給一個新想法十分鐘。",
+        "imageAlt": "陽光穿過雲層，灑向海岸公路"
+      }
+    }
   },
   {
     "id": "day-011",
@@ -184,7 +344,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 3.0",
     "imageFocus": "50% 55%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "给今天留一点空隙，看看窗外的光，也留意内心的感受。",
+        "theme": "休息",
+        "action": "走到窗边，静静看看天空。",
+        "imageAlt": "雪峰环绕的法罗群岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "給今天留一點空隙，看看窗外的光，也留意內心的感受。",
+        "theme": "休息",
+        "action": "走到窗邊，静静看看天空。",
+        "imageAlt": "雪峰環繞的法羅群島峽灣"
+      }
+    }
   },
   {
     "id": "day-012",
@@ -201,7 +377,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 3.0",
     "imageFocus": "50% 55%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "一次不顺利的尝试，也能帮你看清方法，以及下一次可以调整的地方。",
+        "theme": "从挫折中学习",
+        "action": "记下下次可以调整的一件事。",
+        "imageAlt": "倒映在平静峡湾中的挪威群山"
+      },
+      "zh-TW": {
+        "quote": "一次不順利的嘗試，也能幫你看清方法，以及下一次可以調整的地方。",
+        "theme": "從挫折中學習",
+        "action": "記下下次可以調整的一件事。",
+        "imageAlt": "倒映在平静峽灣中的挪威群山"
+      }
+    }
   },
   {
     "id": "day-013",
@@ -218,7 +410,23 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 2.0",
     "imageFocus": "40% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "不必想清所有细节。一个认真而简单的开始，会带你看到下一步。",
+        "theme": "开始",
+        "action": "用手头的资源做出最简单的版本。",
+        "imageAlt": "远处群山映衬下的冰岛岩石海岸"
+      },
+      "zh-TW": {
+        "quote": "不必想清所有細節。一個認真而簡單的開始，會帶你看到下一步。",
+        "theme": "開始",
+        "action": "用手頭的資源做出最簡單的版本。",
+        "imageAlt": "遠處群山映襯下的冰島岩石海岸"
+      }
+    }
   },
   {
     "id": "day-014",
@@ -235,6 +443,1132 @@
     "imageType": "photograph",
     "imageLicense": "CC BY-SA 2.0",
     "imageFocus": "45% 60%",
-    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg"
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg",
+    "quoteType": "original",
+    "quoteAuthor": "Daily Glimmer",
+    "translations": {
+      "zh": {
+        "quote": "忙碌时，留意一件让自己轻松的小事，也给它一点位置。",
+        "theme": "正念",
+        "action": "今天记住一种颜色或一束光。",
+        "imageAlt": "冰岛东岸翻涌的海浪"
+      },
+      "zh-TW": {
+        "quote": "忙碌時，留意一件讓自己輕鬆的小事，也給它一點位置。",
+        "theme": "正念",
+        "action": "今天記住一種顏色或一束光。",
+        "imageAlt": "冰島東岸翻涌的海浪"
+      }
+    }
+  },
+  {
+    "id": "day-015",
+    "publishDate": "2026-11-25",
+    "quote": "Things do not change; we change.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m108358720-1200.webp",
+    "imageAlt": "A road winding through the hills of Iceland",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "45% 70%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry David Thoreau",
+    "translations": {
+      "zh": {
+        "quote": "改变不会自己发生；改变的是我们。",
+        "theme": "改变",
+        "action": "写下一个你今天可以主动改变的小细节。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "改變不會自己發生；改變的是我們。",
+        "theme": "改變",
+        "action": "寫下一個你今天可以主動改變的小細節。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    },
+    "quoteWork": "Walden",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/205/pg205-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-016",
+    "publishDate": "2026-11-26",
+    "quote": "If a man does not keep pace with his companions, perhaps it is because he hears a different drummer.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m111881197-1200.webp",
+    "imageAlt": "An Icelandic fjord beneath a blanket of clouds",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "50% 58%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry David Thoreau",
+    "translations": {
+      "zh": {
+        "quote": "如果一个人没有跟上同伴的步伐，也许是因为他听见了不同的鼓点。",
+        "theme": "做自己",
+        "action": "写下一个你想按自己的节奏完成的目标。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "如果一個人沒有跟上同伴的步伐，也許是因為他聽見了不同的鼓點。",
+        "theme": "做自己",
+        "action": "寫下一個你想按自己的節奏完成的目標。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    },
+    "quoteWork": "Walden",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/205/pg205-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-017",
+    "publishDate": "2026-11-27",
+    "quote": "I wanted to live deep and suck out all the marrow of life.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m113462760-1200.webp",
+    "imageAlt": "Sunlight breaking through clouds over a coastal road",
+    "imageAuthor": "Sanshiro KUBOTA from London, UK",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY 2.0",
+    "imageFocus": "50% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry David Thoreau",
+    "translations": {
+      "zh": {
+        "quote": "我想深入地生活，汲取生命中最精华的部分。",
+        "theme": "投入生活",
+        "action": "选一件事，今天专心投入十五分钟。",
+        "imageAlt": "阳光穿过云层，洒向海岸公路"
+      },
+      "zh-TW": {
+        "quote": "我想深入地生活，汲取生命中最精華的部分。",
+        "theme": "投入生活",
+        "action": "選一件事，今天專心投入十五分鐘。",
+        "imageAlt": "陽光穿過雲層，灑向海岸公路"
+      }
+    },
+    "quoteWork": "Walden",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/205/pg205-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-018",
+    "publishDate": "2026-11-28",
+    "quote": "Our life is frittered away by detail. Simplify, simplify.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m21913761-1200.webp",
+    "imageAlt": "A Faroe Islands fjord surrounded by snowy peaks",
+    "imageAuthor": "Vincent van Zeijst",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry David Thoreau",
+    "translations": {
+      "zh": {
+        "quote": "生活常被琐事一点点消耗。简化，再简化。",
+        "theme": "简化",
+        "action": "删去或推迟一件今天并非必要的事。",
+        "imageAlt": "雪峰环绕的法罗群岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "生活常被瑣事一點點消耗。簡化，再簡化。",
+        "theme": "簡化",
+        "action": "删去或推遲一件今天並非必要的事。",
+        "imageAlt": "雪峰環繞的法羅群島峽灣"
+      }
+    },
+    "quoteWork": "Walden",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/205/pg205-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-019",
+    "publishDate": "2026-11-29",
+    "quote": "The cost of a thing is the amount of what I will call life which is required to be exchanged for it, immediately or in the long run.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m44931831-1200.webp",
+    "imageAlt": "Norwegian mountains reflected in a still fjord",
+    "imageAuthor": "Ximonic (Simo Räsänen)",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry David Thoreau",
+    "translations": {
+      "zh": {
+        "quote": "一件事物的代价，是为得到它而必须付出的生命时间，无论是立刻付出还是长久付出。",
+        "theme": "珍惜时间",
+        "action": "把十分钟留给真正重要的一件事。",
+        "imageAlt": "倒映在平静峡湾中的挪威群山"
+      },
+      "zh-TW": {
+        "quote": "一件事物的代價，是為得到它而必須付出的生命時間，無論是立刻付出還是長久付出。",
+        "theme": "珍惜時間",
+        "action": "把十分鐘留給真正重要的一件事。",
+        "imageAlt": "倒映在平静峽灣中的挪威群山"
+      }
+    },
+    "quoteWork": "Walden",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/205/pg205-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-020",
+    "publishDate": "2026-11-30",
+    "quote": "I know of no more encouraging fact than the unquestionable ability of man to elevate his life by conscious endeavor.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m164989354-1200.webp",
+    "imageAlt": "Rocky Icelandic coastline with distant mountains",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coastal_Cliffs_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "40% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry David Thoreau",
+    "translations": {
+      "zh": {
+        "quote": "没有什么比人能够通过有意识的努力提升生活，更令人鼓舞。",
+        "theme": "主动努力",
+        "action": "为一个想改善的习惯设定今天的第一步。",
+        "imageAlt": "远处群山映衬下的冰岛岩石海岸"
+      },
+      "zh-TW": {
+        "quote": "沒有什麼比人能夠通過有意識的努力提升生活，更令人鼓舞。",
+        "theme": "主動努力",
+        "action": "為一個想改善的習慣設定今天的第一步。",
+        "imageAlt": "遠處群山映襯下的冰島岩石海岸"
+      }
+    },
+    "quoteWork": "Walden",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/205/pg205-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-021",
+    "publishDate": "2026-12-01",
+    "quote": "There is nothing like staying at home for real comfort.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m175976897-1200.webp",
+    "imageAlt": "Waves along Iceland’s eastern shore",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Coastline_Looking_North_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "45% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Jane Austen",
+    "translations": {
+      "zh": {
+        "quote": "真正的舒适，莫过于待在家里。",
+        "theme": "安顿自己",
+        "action": "给自己留一段不赶时间的休息。",
+        "imageAlt": "冰岛东岸翻涌的海浪"
+      },
+      "zh-TW": {
+        "quote": "真正的舒適，莫過於待在家裡。",
+        "theme": "安顿自己",
+        "action": "給自己留一段不趕時間的休息。",
+        "imageAlt": "冰島東岸翻涌的海浪"
+      }
+    },
+    "quoteWork": "Emma",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/158/158-h/158-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-022",
+    "publishDate": "2026-12-02",
+    "quote": "Life appears to me too short to be spent in nursing animosity or registering wrongs.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m108358720-1200.webp",
+    "imageAlt": "A road winding through the hills of Iceland",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "45% 70%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Charlotte Brontë",
+    "translations": {
+      "zh": {
+        "quote": "在我看来，人生太短，不该耗费在积怨或记恨上。",
+        "theme": "放下",
+        "action": "把一件旧烦恼写下来，然后暂时搁置。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "在我看來，人生太短，不該耗費在積怨或記恨上。",
+        "theme": "放下",
+        "action": "把一件舊煩惱寫下來，然後暫時搁置。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    },
+    "quoteWork": "Jane Eyre",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/1260/1260-h/1260-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-023",
+    "publishDate": "2026-12-03",
+    "quote": "Success is counted sweetest by those who ne’er succeed.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m111881197-1200.webp",
+    "imageAlt": "An Icelandic fjord beneath a blanket of clouds",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "50% 58%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Emily Dickinson",
+    "translations": {
+      "zh": {
+        "quote": "未曾成功的人，最懂成功的甘甜。",
+        "theme": "坚持",
+        "action": "写下你正在努力的一件事，以及它对你的意义。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "未曾成功的人，最懂成功的甘甜。",
+        "theme": "堅持",
+        "action": "寫下你正在努力的一件事，以及它對你的意義。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    },
+    "quoteWork": "“Success”",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/2678/pg2678.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-024",
+    "publishDate": "2026-12-04",
+    "quote": "A man’s reach should exceed his grasp, Or what’s a heaven for?",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m113462760-1200.webp",
+    "imageAlt": "Sunlight breaking through clouds over a coastal road",
+    "imageAuthor": "Sanshiro KUBOTA from London, UK",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY 2.0",
+    "imageFocus": "50% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Robert Browning",
+    "translations": {
+      "zh": {
+        "quote": "人的追求应当超越眼前所能及之处，否则理想又有何用？",
+        "theme": "理想",
+        "action": "写下一个比当前能力略遠、但愿意尝试的目标。",
+        "imageAlt": "阳光穿过云层，洒向海岸公路"
+      },
+      "zh-TW": {
+        "quote": "人的追求應當超越眼前所能及之處，否則理想又有何用？",
+        "theme": "理想",
+        "action": "寫下一個比當前能力略遠、但願意嘗試的目標。",
+        "imageAlt": "陽光穿過雲層，灑向海岸公路"
+      }
+    },
+    "quoteWork": "Andrea del Sarto",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/260/pg260-images.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-025",
+    "publishDate": "2026-12-05",
+    "quote": "The fault, dear Brutus, is not in our stars, but in ourselves.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m21913761-1200.webp",
+    "imageAlt": "A Faroe Islands fjord surrounded by snowy peaks",
+    "imageAuthor": "Vincent van Zeijst",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "亲爱的布鲁图，问题不在星辰，而在我们自己。",
+        "theme": "担当",
+        "action": "找出一件你今天能够影响的小事。",
+        "imageAlt": "雪峰环绕的法罗群岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "親愛的布魯圖，問題不在星辰，而在我們自己。",
+        "theme": "擔當",
+        "action": "找出一件你今天能夠影響的小事。",
+        "imageAlt": "雪峰環繞的法羅群島峽灣"
+      }
+    },
+    "quoteWork": "Julius Caesar",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/1522/1522-h/1522-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-026",
+    "publishDate": "2026-12-06",
+    "quote": "Our doubts are traitors, and make us lose the good we oft might win, by fearing to attempt.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m44931831-1200.webp",
+    "imageAlt": "Norwegian mountains reflected in a still fjord",
+    "imageAuthor": "Ximonic (Simo Räsänen)",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "疑虑会背叛我们，让我们因害怕尝试而错失本可获得的美好。",
+        "theme": "尝试",
+        "action": "对一件犹豫的事，先做一个低风险的小尝试。",
+        "imageAlt": "倒映在平静峡湾中的挪威群山"
+      },
+      "zh-TW": {
+        "quote": "疑慮會背叛我們，讓我們因害怕嘗試而錯失本可獲得的美好。",
+        "theme": "嘗試",
+        "action": "對一件猶豫的事，先做一個低风险的小嘗試。",
+        "imageAlt": "倒映在平静峽灣中的挪威群山"
+      }
+    },
+    "quoteWork": "Measure for Measure",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/1792/pg1792.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-027",
+    "publishDate": "2026-12-07",
+    "quote": "Sweet are the uses of adversity.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m164989354-1200.webp",
+    "imageAlt": "Rocky Icelandic coastline with distant mountains",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coastal_Cliffs_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "40% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "逆境也有它能带来的益处。",
+        "theme": "韧性",
+        "action": "从最近的一次困难中，记下一点收获。",
+        "imageAlt": "远处群山映衬下的冰岛岩石海岸"
+      },
+      "zh-TW": {
+        "quote": "逆境也有它能帶來的益處。",
+        "theme": "韧性",
+        "action": "從最近的一次困難中，記下一點收獲。",
+        "imageAlt": "遠處群山映襯下的冰島岩石海岸"
+      }
+    },
+    "quoteWork": "As You Like It",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/1121/pg1121.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-028",
+    "publishDate": "2026-12-08",
+    "quote": "How far that little candle throws his beams! So shines a good deed in a naughty world.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m175976897-1200.webp",
+    "imageAlt": "Waves along Iceland’s eastern shore",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Coastline_Looking_North_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "45% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "小小的蜡烛竟能照得如此远！善意也能照亮不易的世界。",
+        "theme": "善意",
+        "action": "今天为一个人做一件小小的好事。",
+        "imageAlt": "冰岛东岸翻涌的海浪"
+      },
+      "zh-TW": {
+        "quote": "小小的蠟燭竟能照得如此遠！善意也能照亮不易的世界。",
+        "theme": "善意",
+        "action": "今天為一個人做一件小小的好事。",
+        "imageAlt": "冰島東岸翻涌的海浪"
+      }
+    },
+    "quoteWork": "The Merchant of Venice",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/1515/pg1515.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-029",
+    "publishDate": "2026-12-09",
+    "quote": "We know what we are, but know not what we may be.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m108358720-1200.webp",
+    "imageAlt": "A road winding through the hills of Iceland",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "45% 70%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "我们知道此刻的自己，却不知道未来可能成为怎样的人。",
+        "theme": "可能性",
+        "action": "尝试一件你还不熟悉的小事。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "我們知道此刻的自己，卻不知道未來可能成為怎樣的人。",
+        "theme": "可能性",
+        "action": "嘗試一件你還不熟悉的小事。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    },
+    "quoteWork": "Hamlet",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/1524/pg1524.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-030",
+    "publishDate": "2026-12-10",
+    "quote": "No legacy is so rich as honesty.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m111881197-1200.webp",
+    "imageAlt": "An Icelandic fjord beneath a blanket of clouds",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "50% 58%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "没有什么传承比诚实更珍贵。",
+        "theme": "诚实",
+        "action": "对自己诚实地回答一个一直回避的问题。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "沒有什麼傳承比誠實更珍貴。",
+        "theme": "誠實",
+        "action": "對自己誠實地回答一個一直回避的問題。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    },
+    "quoteWork": "All’s Well That Ends Well",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/100/100-h/100-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-031",
+    "publishDate": "2026-12-11",
+    "quote": "Be not afraid of greatness: some are born great, some achieve greatness, and some have greatness thrust upon ’em.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m113462760-1200.webp",
+    "imageAlt": "Sunlight breaking through clouds over a coastal road",
+    "imageAuthor": "Sanshiro KUBOTA from London, UK",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY 2.0",
+    "imageFocus": "50% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "不必害怕卓越：有人天生如此，有人努力达成，也有人因机缘承担起它。",
+        "theme": "勇气",
+        "action": "主动承担一件略有挑战的事。",
+        "imageAlt": "阳光穿过云层，洒向海岸公路"
+      },
+      "zh-TW": {
+        "quote": "不必害怕卓越：有人天生如此，有人努力達成，也有人因機緣承擔起它。",
+        "theme": "勇氣",
+        "action": "主動承擔一件略有挑戰的事。",
+        "imageAlt": "陽光穿過雲層，灑向海岸公路"
+      }
+    },
+    "quoteWork": "Twelfth Night",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/1526/pg1526.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-032",
+    "publishDate": "2026-12-12",
+    "quote": "Think only of the past as its remembrance gives you pleasure.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m21913761-1200.webp",
+    "imageAlt": "A Faroe Islands fjord surrounded by snowy peaks",
+    "imageAuthor": "Vincent van Zeijst",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Jane Austen",
+    "translations": {
+      "zh": {
+        "quote": "只在回忆能带来愉悦时，才去想起过去。",
+        "theme": "向前看",
+        "action": "挑一段温暖的回忆，再把注意力放回今天。",
+        "imageAlt": "雪峰环绕的法罗群岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "只在回憶能帶來愉悅時，才去想起過去。",
+        "theme": "向前看",
+        "action": "挑一段溫暖的回憶，再把注意力放回今天。",
+        "imageAlt": "雪峰環繞的法羅群島峽灣"
+      }
+    },
+    "quoteWork": "Pride and Prejudice",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/1342/1342-h/1342-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-033",
+    "publishDate": "2026-12-13",
+    "quote": "There is no charm equal to tenderness of heart.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m44931831-1200.webp",
+    "imageAlt": "Norwegian mountains reflected in a still fjord",
+    "imageAuthor": "Ximonic (Simo Räsänen)",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Jane Austen",
+    "translations": {
+      "zh": {
+        "quote": "没有什么魅力能胜过一颗温柔的心。",
+        "theme": "温柔",
+        "action": "用温和的语气对自己说一句鼓励的话。",
+        "imageAlt": "倒映在平静峡湾中的挪威群山"
+      },
+      "zh-TW": {
+        "quote": "沒有什麼魅力能勝過一顆溫柔的心。",
+        "theme": "溫柔",
+        "action": "用溫和的語氣對自己說一句鼓勵的話。",
+        "imageAlt": "倒映在平静峽灣中的挪威群山"
+      }
+    },
+    "quoteWork": "Emma",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/158/158-h/158-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-034",
+    "publishDate": "2026-12-14",
+    "quote": "And if it’s proud to have a heart that never hardens, and a temper that never tires, and a touch that never hurts, she is proud.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m164989354-1200.webp",
+    "imageAlt": "Rocky Icelandic coastline with distant mountains",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coastal_Cliffs_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "40% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Charles Dickens",
+    "translations": {
+      "zh": {
+        "quote": "如果她以拥有一颗不会变硬的心、一份不会耗尽的耐心和一份不伤人的温柔为傲，那她就该为此自豪。",
+        "theme": "互助",
+        "action": "主动替身边的人分担一件小事。",
+        "imageAlt": "远处群山映衬下的冰岛岩石海岸"
+      },
+      "zh-TW": {
+        "quote": "如果她以擁有一顆不會變硬的心、一份不會耗盡的耐心和一份不傷人的溫柔為傲，那她就該為此自豪。",
+        "theme": "互助",
+        "action": "主動替身邊的人分擔一件小事。",
+        "imageAlt": "遠處群山映襯下的冰島岩石海岸"
+      }
+    },
+    "quoteWork": "Our Mutual Friend",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/883/883-h/883-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-035",
+    "publishDate": "2026-12-15",
+    "quote": "Have a heart that never hardens, and a temper that never tires, and a touch that never hurts.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m175976897-1200.webp",
+    "imageAlt": "Waves along Iceland’s eastern shore",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Coastline_Looking_North_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "45% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Charles Dickens",
+    "translations": {
+      "zh": {
+        "quote": "愿心不变硬，耐心不耗尽，言行不伤人。",
+        "theme": "善待他人",
+        "action": "今天倾听一个人，不急着打断或评判。",
+        "imageAlt": "冰岛东岸翻涌的海浪"
+      },
+      "zh-TW": {
+        "quote": "願心不變硬，耐心不耗盡，言行不傷人。",
+        "theme": "善待他人",
+        "action": "今天倾聽一個人，不急著打斷或評判。",
+        "imageAlt": "冰島東岸翻涌的海浪"
+      }
+    },
+    "quoteWork": "Our Mutual Friend",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/883/883-h/883-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-036",
+    "publishDate": "2026-12-16",
+    "quote": "What do we live for, if it is not to make life less difficult to each other?",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m108358720-1200.webp",
+    "imageAlt": "A road winding through the hills of Iceland",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "45% 70%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "George Eliot",
+    "translations": {
+      "zh": {
+        "quote": "如果不是为了让彼此的生活少些艰难，我们为何而活？",
+        "theme": "互相扶持",
+        "action": "问问身边的人，今天有什么小事需要帮忙。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "如果不是為了讓彼此的生活少些艱難，我們為何而活？",
+        "theme": "互相扶持",
+        "action": "問問身邊的人，今天有什麼小事需要幫忙。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    },
+    "quoteWork": "Middlemarch",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/145/145-h/145-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-037",
+    "publishDate": "2026-12-17",
+    "quote": "Nothing can bring you peace but yourself.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m111881197-1200.webp",
+    "imageAlt": "An Icelandic fjord beneath a blanket of clouds",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "50% 58%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Ralph Waldo Emerson",
+    "translations": {
+      "zh": {
+        "quote": "能带给你内心安宁的，只有你自己。",
+        "theme": "内心安定",
+        "action": "暂停一分钟，感受几次缓慢呼吸。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "能帶給你內心安寧的，只有你自己。",
+        "theme": "內心安定",
+        "action": "暫停一分鐘，感受几次緩慢呼吸。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    },
+    "quoteWork": "Self-Reliance",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/16643/16643-h/16643-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-038",
+    "publishDate": "2026-12-18",
+    "quote": "Nothing great was ever achieved without enthusiasm.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m113462760-1200.webp",
+    "imageAlt": "Sunlight breaking through clouds over a coastal road",
+    "imageAuthor": "Sanshiro KUBOTA from London, UK",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY 2.0",
+    "imageFocus": "50% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Road_at_Vi%C3%B0arei%C3%B0i_-_Faroe_Islands_(50518168417).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Ralph Waldo Emerson",
+    "translations": {
+      "zh": {
+        "quote": "没有热忱，就难以成就伟大的事情。",
+        "theme": "热忱",
+        "action": "为一件你在意的事安排十分钟。",
+        "imageAlt": "阳光穿过云层，洒向海岸公路"
+      },
+      "zh-TW": {
+        "quote": "沒有熱忱，就難以成就偉大的事情。",
+        "theme": "熱忱",
+        "action": "為一件你在意的事安排十分鐘。",
+        "imageAlt": "陽光穿過雲層，灑向海岸公路"
+      }
+    },
+    "quoteWork": "Circles",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/2944/2944-h/2944-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-039",
+    "publishDate": "2026-12-19",
+    "quote": "Let us, then, be up and doing, with a heart for any fate.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m21913761-1200.webp",
+    "imageAlt": "A Faroe Islands fjord surrounded by snowy peaks",
+    "imageAuthor": "Vincent van Zeijst",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Faroe_Islands,_Eysturoy,_Funningsfj%C3%B8r%C3%B0ur_(fjord)_in_October.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry Wadsworth Longfellow",
+    "translations": {
+      "zh": {
+        "quote": "那么，就起身行动吧，以一颗坦然的心面对际遇。",
+        "theme": "行动",
+        "action": "现在就完成一个两分钟能做完的小任务。",
+        "imageAlt": "雪峰环绕的法罗群岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "那麼，就起身行動吧，以一顆坦然的心面對際遇。",
+        "theme": "行動",
+        "action": "現在就完成一個兩分鐘能做完的小任務。",
+        "imageAlt": "雪峰環繞的法羅群島峽灣"
+      }
+    },
+    "quoteWork": "A Psalm of Life",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/7174/7174-h/7174-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-040",
+    "publishDate": "2026-12-20",
+    "quote": "Lives of great men all remind us we can make our lives sublime.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m44931831-1200.webp",
+    "imageAlt": "Norwegian mountains reflected in a still fjord",
+    "imageAuthor": "Ximonic (Simo Räsänen)",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFocus": "50% 55%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Sl%C3%B8verfjorden_towards_northeast,_Austv%C3%A5g%C3%B8ya,_Lofoten,_Norway,_2015_September.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Henry Wadsworth Longfellow",
+    "translations": {
+      "zh": {
+        "quote": "伟大者的一生提醒我们，也能让自己的生命更加充实。",
+        "theme": "榜样",
+        "action": "从敬佩的人身上，选一个做法今天试一试。",
+        "imageAlt": "倒映在平静峡湾中的挪威群山"
+      },
+      "zh-TW": {
+        "quote": "偉大者的一生提醒我們，也能讓自己的生命更加充實。",
+        "theme": "榜樣",
+        "action": "從敬佩的人身上，選一個做法今天試一試。",
+        "imageAlt": "倒映在平静峽灣中的挪威群山"
+      }
+    },
+    "quoteWork": "A Psalm of Life",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/7174/7174-h/7174-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-041",
+    "publishDate": "2026-12-21",
+    "quote": "A man is literally what he thinks, his character being the complete sum of all his thoughts.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m164989354-1200.webp",
+    "imageAlt": "Rocky Icelandic coastline with distant mountains",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:East_Coastal_Cliffs_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "40% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/East_Coastal_Cliffs_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "James Allen",
+    "translations": {
+      "zh": {
+        "quote": "一个人如何思考，逐渐塑造了他的品格。",
+        "theme": "心念",
+        "action": "留意今天反复出现的一个想法，并温和地检视它。",
+        "imageAlt": "远处群山映衬下的冰岛岩石海岸"
+      },
+      "zh-TW": {
+        "quote": "一個人如何思考，逐漸塑造了他的品格。",
+        "theme": "心念",
+        "action": "留意今天反複出現的一個想法，並溫和地檢視它。",
+        "imageAlt": "遠處群山映襯下的冰島岩石海岸"
+      }
+    },
+    "quoteWork": "As a Man Thinketh",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/4507/4507-h/4507-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-042",
+    "publishDate": "2026-12-22",
+    "quote": "Men are anxious to improve their circumstances, but are unwilling to improve themselves.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m175976897-1200.webp",
+    "imageAlt": "Waves along Iceland’s eastern shore",
+    "imageAuthor": "Eric Kilby",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Coastline_Looking_North_-_Iceland.jpg",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFocus": "45% 60%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Coastline_Looking_North_-_Iceland.jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "James Allen",
+    "translations": {
+      "zh": {
+        "quote": "人们渴望改善处境，却常不愿先改变自己。",
+        "theme": "自我成长",
+        "action": "选择一个可以从自己开始调整的小习惯。",
+        "imageAlt": "冰岛东岸翻涌的海浪"
+      },
+      "zh-TW": {
+        "quote": "人們渴望改善處境，卻常不願先改變自己。",
+        "theme": "自我成長",
+        "action": "選擇一個可以從自己開始調整的小習慣。",
+        "imageAlt": "冰島東岸翻涌的海浪"
+      }
+    },
+    "quoteWork": "As a Man Thinketh",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/4507/4507-h/4507-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-043",
+    "publishDate": "2026-12-23",
+    "quote": "The greatest thing in the world is to know how to belong to oneself.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m108358720-1200.webp",
+    "imageAlt": "A road winding through the hills of Iceland",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "45% 70%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/624_Road,_Westfjords,_Iceland_(48802800941).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "Michel de Montaigne",
+    "translations": {
+      "zh": {
+        "quote": "世上重要的事，是懂得如何成为自己。",
+        "theme": "自我接纳",
+        "action": "做一个符合自己真实偏好的小选择。",
+        "imageAlt": "蜿蜒穿过冰岛山丘的道路"
+      },
+      "zh-TW": {
+        "quote": "世上重要的事，是懂得如何成為自己。",
+        "theme": "自我接納",
+        "action": "做一個符合自己真實偏好的小選擇。",
+        "imageAlt": "蜿蜒穿過冰島山丘的道路"
+      }
+    },
+    "quoteWork": "Essays",
+    "quoteSourceUrl": "https://www.gutenberg.org/files/3600/3600-h/3600-h.htm",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
+  },
+  {
+    "id": "day-044",
+    "publishDate": "2026-12-24",
+    "quote": "This above all: to thine own self be true.",
+    "theme": "Reflection",
+    "action": "Take one small, practical step today.",
+    "image": "./assets/img/photo-m111881197-1200.webp",
+    "imageAlt": "An Icelandic fjord beneath a blanket of clouds",
+    "imageAuthor": "Barry Marsh",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "imageLicenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "imageDownloadedAt": "2026-11-19",
+    "imageType": "photograph",
+    "imageLicense": "Public Domain Mark 1.0",
+    "imageFocus": "50% 58%",
+    "imageCreditPath": "commons.wikimedia.org/wiki/Special:Redirect/file/Stunning_Westfjords,_Iceland_(48816583203).jpg",
+    "quoteType": "quotation",
+    "quoteAuthor": "William Shakespeare",
+    "translations": {
+      "zh": {
+        "quote": "最重要的是，忠于你自己。",
+        "theme": "开始",
+        "action": "把一个远大目标化成今天可以迈出的一步。",
+        "imageAlt": "云层下的冰岛峡湾"
+      },
+      "zh-TW": {
+        "quote": "最重要的是，忠於你自己。",
+        "theme": "開始",
+        "action": "把一個遠大目標化成今天可以邁出的一步。",
+        "imageAlt": "雲層下的冰島峽灣"
+      }
+    },
+    "quoteWork": "Hamlet",
+    "quoteSourceUrl": "https://www.gutenberg.org/cache/epub/1524/pg1524.html",
+    "quoteRightsBasis": "The cited original work is public domain in the United States. The cited edition or translation may have separate rights; verify local rules before reuse outside the U.S.",
+    "quoteVerifiedAt": "2026-11-20"
   }
 ]
