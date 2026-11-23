@@ -1,10 +1,10 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';import {createPortal} from 'react-dom';import type {Entry,Locale} from '../lib/content';import {text,copy} from '../lib/content';
-import {AlignLeft,Copy,Download,Image as ImageIcon,Maximize,X} from 'lucide-react';
+import {Check,Copy,Download,Image as ImageIcon,X} from 'lucide-react';
 type Layout='photo'|'quote'|'full';type Palette='paper'|'ocean'|'sunset'|'night';
 const colors={paper:['#efe9e0','#22261f','#2e5b44'],ocean:['#e5eef0','#17323c','#287b83'],sunset:['#f2e3d5','#482d28','#bd5a3c'],night:['#172723','#f3f0e8','#d5a86d']};
 export function QuoteActions({entry,locale}:{entry:Entry;locale:Locale}){const [status,setStatus]=useState(''),[open,setOpen]=useState(false),[portalRoot,setPortalRoot]=useState<HTMLElement|null>(null),[layout,setLayout]=useState<Layout>('photo'),[palette,setPalette]=useState<Palette>('paper');const preview=useRef<HTMLCanvasElement>(null);const q=text(entry,locale,'quote');
-function paint(canvas:HTMLCanvasElement){
+function paint(canvas:HTMLCanvasElement, onReady?: () => void){
   const c=canvas.getContext('2d')!,scale=canvas.width/1080,h=canvas.height;
   const full=layout==='full',quoteFirst=layout==='quote';
   const photoH=full?h:Math.round(h*.45);
@@ -48,12 +48,132 @@ function paint(canvas:HTMLCanvasElement){
     c.save();c.beginPath();c.rect(0,photoY,canvas.width,photoH);c.clip();
     const ratio=Math.max(canvas.width/img.width,photoH/img.height);
     c.drawImage(img,(canvas.width-img.width*ratio)/2,photoY+(photoH-img.height*ratio)/2,img.width*ratio,img.height*ratio);
-    c.restore();drawText();
+    c.restore();drawText();onReady?.();
   };
-  img.onerror=drawText;
+  img.onerror=()=>{drawText();onReady?.();};
   img.src=entry.image.replace('./','/');
+  return () => { img.onload = null; img.onerror = null; };;
 }
-useEffect(()=>{setPortalRoot(document.getElementById('poster-root'))},[]);useEffect(()=>{if(open&&preview.current)paint(preview.current)},[entry,locale,layout,palette,open]);async function copyQuote(){try{await navigator.clipboard.writeText(`${q}\n— ${entry.quoteAuthor||copy[locale].original}${entry.quoteWork?`, ${entry.quoteWork}`:''}${entry.quoteSourceUrl?`\n${entry.quoteSourceUrl}`:''}`);setStatus(locale==='en'?'Copied':locale==='zh'?'已复制':'已複製')}catch{setStatus(locale==='en'?'Copy failed':locale==='zh'?'复制失败':'複製失敗')}}function save(){const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1440;paint(canvas);setTimeout(()=>{const a=document.createElement('a');a.download=`daily-glimmer-${layout}-${palette}-${entry.publishDate}.png`;a.href=canvas.toDataURL('image/png');a.click()},350)}
-const layoutIcons={photo:ImageIcon,quote:AlignLeft,full:Maximize};
-const editor=open&&portalRoot?createPortal(<section className="poster-editor wrap"><div className="poster-editor-head"><div><span>{copy[locale].poster}</span><h2>{copy[locale].posterTitle}</h2><p>{copy[locale].posterHelp}</p></div><button type="button" className="poster-editor-close" aria-label={copy[locale].close} onClick={()=>setOpen(false)}><X aria-hidden="true" size={18}/></button></div><div className="poster-editor-grid"><div className="poster-controls"><fieldset><legend>{copy[locale].layout}</legend><div className="poster-choice-row">{(['photo','quote','full'] as Layout[]).map(x=>{const Icon=layoutIcons[x];return <button type="button" key={x} className={`poster-choice ${layout===x?'selected':''}`} aria-pressed={layout===x} onClick={()=>setLayout(x)}><Icon className="control-icon" aria-hidden="true" size={18}/><span>{copy[locale][x]}</span></button>})}</div></fieldset>{layout!=='full'&&<fieldset><legend>{copy[locale].palette}</legend><div className="palette-row">{(['paper','ocean','sunset','night'] as Palette[]).map(x=><button type="button" key={x} className={`palette-choice ${palette===x?'selected':''}`} aria-pressed={palette===x} onClick={()=>setPalette(x)}><i style={{background:colors[x][0]}} aria-hidden="true"/><span>{x}</span></button>)}</div></fieldset>}<button type="button" className="btn btn--primary" onClick={save}><Download aria-hidden="true" size={18}/><span>{copy[locale].download}</span></button></div><div className="poster-preview"><canvas ref={preview} width="420" height="560" aria-label="Poster preview"/></div></div></section>,portalRoot):null;
-return <><div className="btn-row"><button type="button" className="btn btn--primary" aria-expanded={open} onClick={()=>setOpen(v=>!v)}><ImageIcon aria-hidden="true" size={18}/><span>{copy[locale].save}</span></button><button type="button" className="btn btn--secondary" onClick={copyQuote}><Copy aria-hidden="true" size={18}/><span>{copy[locale].copy}</span></button><span role="status">{status}</span></div>{editor}</>}
+const editorHeading = useRef<HTMLHeadingElement>(null);
+const editorTrigger = useRef<HTMLButtonElement>(null);
+const [saving, setSaving] = useState(false);
+const c = copy[locale];
+const labels = {
+  en: { preview: 'Poster preview', palettes: ['Paper', 'Ocean', 'Sunset', 'Night'], saving: 'Preparing PNG…', failed: 'Could not download the poster.' },
+  zh: { preview: '日签预览', palettes: ['纸白', '海蓝', '落日', '夜色'], saving: '正在生成 PNG…', failed: '无法下载日签。' },
+  'zh-TW': { preview: '日簽預覽', palettes: ['紙白', '海藍', '落日', '夜色'], saving: '正在產生 PNG…', failed: '無法下載日簽。' },
+}[locale];
+const [downloadError, setDownloadError] = useState('');
+
+useEffect(() => { setPortalRoot(document.getElementById('poster-root')); }, []);
+useEffect(() => {
+  if (open && portalRoot) editorHeading.current?.focus();
+}, [open, portalRoot]);
+useEffect(() => {
+  if (open && preview.current) return paint(preview.current);
+}, [entry, locale, layout, palette, open, portalRoot]);
+
+function closeEditor() {
+  setOpen(false);
+  editorTrigger.current?.focus();
+}
+
+async function copyQuote() {
+  try {
+    const attribution = entry.quoteAuthor || c.original;
+    const work = entry.quoteWork ? `, ${entry.quoteWork}` : '';
+    const source = entry.quoteSourceUrl ? `\n${entry.quoteSourceUrl}` : '';
+    await navigator.clipboard.writeText(`${q}\n— ${attribution}${work}${source}`);
+    setStatus(locale === 'en' ? 'Quote copied' : locale === 'zh' ? '已复制语录' : '已複製語錄');
+  } catch {
+    setStatus(locale === 'en' ? 'Could not copy quote' : locale === 'zh' ? '复制失败' : '複製失敗');
+  }
+}
+
+function save() {
+  setSaving(true);
+  setDownloadError('');
+  const canvas = document.createElement('canvas');
+  canvas.width = 1080;
+  canvas.height = 1440;
+  paint(canvas, () => {
+    try {
+      const link = document.createElement('a');
+      link.download = `daily-glimmer-${layout}-${palette}-${entry.publishDate}.png`;
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    } catch {
+      setDownloadError(labels.failed);
+    } finally {
+      setSaving(false);
+    }
+  });
+}
+
+const editor = open && portalRoot ? createPortal(
+  <section className="poster-editor" id="poster-editor" aria-labelledby="poster-title"
+    onKeyDown={event => { if (event.key === 'Escape') closeEditor(); }}>
+    <div className="poster-editor-head">
+      <div>
+        <h2 id="poster-title" ref={editorHeading} tabIndex={-1}>{c.posterTitle}</h2>
+        <p>{c.posterHelp}</p>
+      </div>
+      <button type="button" className="poster-editor-close" aria-label={c.close} onClick={closeEditor}><X aria-hidden="true" size={18}/></button>
+    </div>
+    <div className="poster-editor-grid">
+      <div className="poster-controls">
+        <fieldset>
+          <legend>{c.layout}</legend>
+          <div className="poster-choice-row">
+            {(['photo', 'quote', 'full'] as const).map(option => (
+              <button key={option} type="button" className={`poster-choice ${layout === option ? 'selected' : ''}`}
+                aria-pressed={layout === option} onClick={() => setLayout(option)}>
+                <span className={`layout-thumb layout-thumb--${option}`} aria-hidden="true"><i/><b/></span>
+                <span>{c[option]}</span>
+                {layout === option && <Check className="control-check" aria-hidden="true"/>}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+        {layout !== 'full' && <fieldset>
+          <legend>{c.palette}</legend>
+          <div className="palette-row">
+            {(['paper', 'ocean', 'sunset', 'night'] as const).map((option, index) => (
+              <button key={option} type="button" className={`palette-choice ${palette === option ? 'selected' : ''}`}
+                aria-pressed={palette === option} onClick={() => setPalette(option)}>
+                <i style={{background: colors[option][0]}} aria-hidden="true"/>
+                <span>{labels.palettes[index]}</span>
+                {palette === option && <Check className="control-check" aria-hidden="true"/>}
+              </button>
+            ))}
+          </div>
+        </fieldset>}
+        <button type="button" className="btn btn--primary poster-download" disabled={saving} onClick={save}>
+          <Download aria-hidden="true" size={18}/><span>{saving ? labels.saving : c.download}</span>
+        </button>
+        {downloadError && <p className="control-status" role="alert">{downloadError}</p>}
+      </div>
+      <div className="poster-preview">
+        <canvas ref={preview} width="540" height="720" role="img" aria-label={labels.preview}/>
+      </div>
+    </div>
+  </section>,
+  portalRoot
+) : null;
+
+return <>
+  <div className="quote-actions">
+    <div className="btn-row">
+      <button ref={editorTrigger} type="button" className="btn btn--primary" aria-expanded={open}
+        aria-controls={open ? 'poster-editor' : undefined} onClick={() => open ? closeEditor() : setOpen(true)}>
+        <ImageIcon aria-hidden="true" size={18}/><span>{c.save}</span>
+      </button>
+      <button type="button" className="btn btn--secondary" onClick={copyQuote}>
+        <Copy aria-hidden="true" size={18}/><span>{c.copy}</span>
+      </button>
+    </div>
+    <p className="control-status" role="status">{status}</p>
+  </div>
+  {editor}
+</>;
+}

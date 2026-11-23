@@ -27,6 +27,7 @@ export function LanguageSelect({locale}:{locale:Locale}){
 
   function choose(next:Locale){
     setOpen(false);
+    trigger.current?.focus();
     if(next!==locale)router.push(path.replace(/^\/[^/]+/,`/${next}`));
   }
   function handleMenuKey(event:React.KeyboardEvent<HTMLDivElement>){
@@ -40,7 +41,8 @@ export function LanguageSelect({locale}:{locale:Locale}){
     event.preventDefault();setActive(next);items.current[next]?.focus();
   }
 
-  return <div className="language-picker" ref={root}>
+  return <div className="language-picker" ref={root}
+    onBlur={event=>{if(!event.currentTarget.contains(event.relatedTarget))setOpen(false)}}>
     <button ref={trigger} type="button" className="language-trigger" aria-label={`${copy[locale].languageLabel}: ${selected.nativeLabel}`} aria-haspopup="menu" aria-expanded={open} onClick={()=>setOpen(value=>!value)} onKeyDown={event=>{if(event.key==='ArrowDown'||event.key==='ArrowUp'){event.preventDefault();setOpen(true);}}}>
       <Globe2 aria-hidden="true" className="language-icon" size={16}/>
       <span>{selected.nativeLabel}</span>
@@ -48,7 +50,7 @@ export function LanguageSelect({locale}:{locale:Locale}){
     </button>
     {open&&<div className="language-menu" role="menu" aria-label={copy[locale].languageLabel} onKeyDown={handleMenuKey}>
       {languages.map((language,index)=><button key={language.locale} ref={element=>{items.current[index]=element}} type="button" className={`language-option${language.locale===locale?' is-selected':''}`} role="menuitemradio" aria-checked={language.locale===locale} tabIndex={active===index?0:-1} onFocus={()=>setActive(index)} onClick={()=>choose(language.locale)}>
-        <span className="language-option-copy"><span className="language-option-native">{language.nativeLabel}</span><span className="language-option-name">{language.label}</span></span>
+        <span className="language-option-copy"><span className="language-option-native" lang={language.locale}>{language.nativeLabel}</span>{language.label!==language.nativeLabel&&<span className="language-option-name" lang="en">{language.label}</span>}</span>
         {language.locale===locale&&<Check aria-hidden="true" size={16}/ >}
       </button>)}
     </div>}
