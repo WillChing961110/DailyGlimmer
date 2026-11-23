@@ -2,10 +2,13 @@ name: Daily static publish
 on:
   schedule:
     - cron: '10 0 * * *'
+      timezone: America/New_York
   workflow_dispatch:
+permissions: {}
 jobs:
   trigger-pages-build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Trigger Cloudflare Pages deployment
         env:
@@ -15,4 +18,5 @@ jobs:
             echo "Missing CLOUDFLARE_PAGES_DEPLOY_HOOK repository secret" >&2
             exit 1
           fi
-          curl --fail --silent --show-error -X POST "$DEPLOY_HOOK_URL"
+          curl --fail --silent --show-error --max-time 30 --output /dev/null -X POST "$DEPLOY_HOOK_URL"
+          echo "Cloudflare Pages accepted the deployment request. Check the Pages Deployments tab for the build result."

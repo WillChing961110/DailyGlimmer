@@ -18,9 +18,22 @@ export const copy = {
 export function text(entry: Entry, locale: Locale, field: 'quote'|'theme'|'action'|'imageAlt') {
   return entry.translations?.[locale]?.[field] || entry[field];
 }
+const publicationDateFormatter = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'America/New_York',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+});
+
 export function published(date = new Date()) {
-  const utc = date.toISOString().slice(0,10);
-  return entries.filter(e => e.publishDate <= utc).sort((a,b)=>b.publishDate.localeCompare(a.publishDate));
+  const parts = publicationDateFormatter.formatToParts(date);
+  const year = parts.find(part => part.type === 'year')?.value;
+  const month = parts.find(part => part.type === 'month')?.value;
+  const day = parts.find(part => part.type === 'day')?.value;
+  const publicationDate = `${year}-${month}-${day}`;
+  return entries
+    .filter(entry => entry.publishDate <= publicationDate)
+    .sort((a, b) => b.publishDate.localeCompare(a.publishDate));
 }
 export function route(locale: Locale, date: string) { return `/${locale}/quote/${date}`; }
 export const siteUrl=(process.env.NEXT_PUBLIC_SITE_URL||'https://dailyglimmer.pages.dev').replace(/\/$/,'');
